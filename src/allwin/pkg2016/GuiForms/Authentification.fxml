@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="root" maxHeight="600.0" maxWidth="800.0" minHeight="580.0" minWidth="780.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allwin.pkg2016.GuiForms.AuthentificationController">
+   <children>
+      <Pane layoutX="258.0" layoutY="6.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ImageView fitHeight="600.0" fitWidth="800.0" layoutX="153.0" opacity="0.8" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@Images/background.jpg" />
+         </image>
+      </ImageView>
+      <Separator layoutX="14.0" layoutY="157.0" prefWidth="200.0" style="-fx-background-color: black;" stylesheets="@MainStyle.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0" />
+      <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" opacity="0.9" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: lightgrey; -fx-border-color: black; -fx-background-radius: 25; -fx-border-radius: 25;" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="420.0">
+         <children>
+            <Label alignment="CENTER" layoutX="116.0" layoutY="6.0" text="Or Just Sign In Now ?" textFill="#bf5050" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="ButtonSingIn" buttonType="RAISED" layoutX="117.0" layoutY="40.0" onAction="#clickSignIn" ripplerFill="#9e4f4f" style="-fx-background-color: white; -fx-background-radius: 10;" text="Sign In" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="438.0" layoutY="500.0" minHeight="0.0" minWidth="0.0" opacity="0.9" prefHeight="89.0" prefWidth="212.0" style="-fx-background-color: lightgrey; -fx-border-color: black; -fx-background-radius: 25; -fx-border-radius: 25;" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="420.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="109.0" layoutY="6.0" text="Or Continue As Visitor ?" textFill="#bf5050" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="ButtonVisitor" buttonType="RAISED" layoutX="117.0" layoutY="40.0" onAction="#clickVisitor" ripplerFill="#9e4f4f" style="-fx-background-color: white; -fx-background-radius: 10;" text="Visitor" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" opacity="0.9" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: lightgrey; -fx-border-color: black; -fx-border-radius: 50; -fx-background-radius: 50;" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="180.0">
+         <children>
+            <Label fx:id="UserLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="120.0" layoutY="80.0" minHeight="25.0" minWidth="90.0" stylesheets="@MainStyle.css" text="Username :" textAlignment="JUSTIFY" textFill="#bf5050" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="80.0">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="PassLabel" alignment="CENTER_RIGHT" layoutX="101.0" layoutY="110.0" minHeight="25.0" minWidth="90.0" text="Password :" textAlignment="JUSTIFY" textFill="#bf5050" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="135.0">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="298.0" layoutY="31.0" text="Already Signed In ?" textFill="#bf5050" AnchorPane.bottomAnchor="190.0" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="290.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Text fx:id="WrongPass" fill="#bf5050" fontSmoothingType="LCD" layoutX="233.0" layoutY="175.94921875" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="200.0" AnchorPane.leftAnchor="232.0" AnchorPane.rightAnchor="249.0" AnchorPane.topAnchor="162.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="UsernameTF" focusColor="#9e4f4f" labelFloat="true" layoutX="233.0" layoutY="78.0" maxHeight="35.0" minHeight="35.0" minWidth="200.0" promptText="Nom d'utilisateur" style="-fx-background-color: white; -fx-background-radius: 10;" AnchorPane.leftAnchor="240.0" AnchorPane.topAnchor="75.0" />
+            <JFXPasswordField fx:id="PasswordTF" focusColor="#9e4f4f" labelFloat="true" layoutX="233.0" layoutY="118.0" maxHeight="35.0" minHeight="35.0" minWidth="200.0" promptText="Mot de Passe" style="-fx-background-color: white; -fx-background-radius: 10;" AnchorPane.leftAnchor="240.0" AnchorPane.topAnchor="130.0" />
+            <JFXButton fx:id="ButtonConnect" buttonType="RAISED" layoutX="505.0" layoutY="99.0" minHeight="40.0" minWidth="70.0" onAction="#clickConnect" ripplerFill="#9e4f4f" style="-fx-background-color: white; -fx-background-radius: 10;" text="Connect" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="100.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <Hyperlink alignment="CENTER" contentDisplay="CENTER" layoutX="304.0" layoutY="193.0" onAction="#clickForgot" text="Forgot Password ?" AnchorPane.leftAnchor="280.0" AnchorPane.rightAnchor="280.0" AnchorPane.topAnchor="175.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allwin.pkg2016.GuiForms.CompteResponsableController">
+   <children>
+      <JFXDrawer fx:id="PaneDrawer" layoutX="586.0" layoutY="106.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <JFXHamburger fx:id="hamburger" layoutX="460.0" layoutY="14.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+      <JFXDrawer fx:id="SideDrawer" defaultDrawerSize="200.0" layoutY="-6.0" opacity="0.6" prefHeight="600.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="MenuVbox" prefHeight="600.0" prefWidth="200.0" style="-fx-border-color: black;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/shara.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXButton alignment="CENTER" contentDisplay="RIGHT" defaultButton="true" graphicTextGap="110.0" onAction="#action1" prefHeight="40.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 0.5;" text="Home" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../Documents/My%20Games/AllWin-2016/src/allwin/pkg2016/GuiForms/Icons/send-button.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton onAction="#clickProfile" prefHeight="40.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 0.5;" text="Profile" />
+                  <JFXButton onAction="#clickTest" prefHeight="40.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 0.5;" text="Tests Anti-Dopage" />
+                  <JFXButton onAction="#clickAjoutJoueur" prefHeight="40.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 0.5;" text="Joueurs" />
+                  <JFXButton onAction="#clickClub" prefHeight="40.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 0.5;" text="Clubs" />
+                  <JFXButton onAction="#clickCompetition" prefHeight="40.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 0.5;" text="Tournois" />
+                  <JFXButton onAction="#exit" prefHeight="40.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 0.5;" text="Exit" />
+               </children>
+            </VBox>
+         </children>
+      </JFXDrawer>
+   </children>
+</AnchorPane>

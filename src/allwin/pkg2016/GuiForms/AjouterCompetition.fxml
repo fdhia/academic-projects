@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" stylesheets="@MainStyle.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allwin.pkg2016.GuiForms.AjouterCompetitionController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" layoutX="-6.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/background.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="225.0" layoutY="188.0" minHeight="30.0" text="Nom de Compétition :" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="160.0" />
+      <Label layoutX="221.0" layoutY="228.0" minHeight="30.0" text="Date Debut :" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="220.0" />
+      <Label layoutX="217.0" layoutY="282.0" minHeight="30.0" text="Date Fin :" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="270.0" />
+      <Label layoutX="228.0" layoutY="326.0" minHeight="30.0" text="Lieu de Compétition :" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="320.0" />
+      <Label layoutX="225.0" layoutY="392.0" minHeight="30.0" text="Nombre max joueurs :" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="370.0" />
+      <JFXTextField fx:id="NomCompTF" layoutX="341.0" layoutY="157.0" maxHeight="35.0" minHeight="35.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="160.0" />
+      <JFXDrawer layoutX="340.0" layoutY="236.0" minHeight="35.0" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="220.0">
+         <children>
+            <JFXDatePicker fx:id="DateDebutTF" maxHeight="35.0" minHeight="35.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" />
+         </children>
+      </JFXDrawer>
+      <JFXDrawer layoutX="350.0" layoutY="246.0" minHeight="35.0" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="270.0">
+         <children>
+            <JFXDatePicker fx:id="DateFinComp" maxHeight="35.0" minHeight="35.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" />
+         </children>
+      </JFXDrawer>
+      <JFXTextField fx:id="LieuTF" layoutX="351.0" layoutY="167.0" maxHeight="35.0" minHeight="35.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="320.0" />
+      <JFXTextField fx:id="NombreMaxTF" layoutX="351.0" layoutY="167.0" maxHeight="35.0" maxWidth="100.0" minHeight="35.0" minWidth="100.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" AnchorPane.leftAnchor="340.0" AnchorPane.topAnchor="370.0" />
+      <JFXButton buttonType="RAISED" layoutX="390.0" layoutY="443.0" minWidth="100.0" onAction="#AjouterCompDia" style="-fx-background-radius: 10; -fx-border-radius: 10;" text="Ajouter" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="440.0" />
+      <JFXButton buttonType="RAISED" layoutX="548.0" layoutY="445.0" onAction="#handleCancel" style="-fx-background-radius: 10; -fx-border-radius: 10;" text="Annuler" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="440.0" />
+   </children>
+</AnchorPane>

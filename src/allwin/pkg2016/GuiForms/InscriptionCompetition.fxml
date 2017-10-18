@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" minHeight="600.0" minWidth="800.0" prefHeight="400.0" prefWidth="600.0" stylesheets="@MainStyle.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allwin.pkg2016.GuiForms.InscriptionCompetitionController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" opacity="0.7" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@Images/background.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableCompetition" layoutX="73.0" opacity="0.8" prefHeight="400.0" prefWidth="394.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="140.0">
+        <columns>
+          <TableColumn fx:id="nomC" prefWidth="185.0" text=" Competition" />
+          <TableColumn fx:id="dateD" prefWidth="108.0" text="DateDebut" />
+            <TableColumn fx:id="datefin" prefWidth="121.0" text="DateFin" />
+            <TableColumn fx:id="lieuC" prefWidth="125.0" text="Lieu" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="rser" buttonType="RAISED" layoutX="668.0" layoutY="140.0" minWidth="120.0" onAction="#clickReservation" style="-fx-background-radius: 10; -fx-border-radius: 10;" text="S'inscrire" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="140.0" />
+      <Separator layoutX="-40.0" layoutY="107.0" prefWidth="200.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0" />
+   </children>
+</AnchorPane>

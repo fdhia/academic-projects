@@ -1,0 +1,20 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package allwin.pkg2016.DAO.Interfaces;
+
+import allwin.pkg2016.Entities.Club;
+import java.util.List;
+
+/**
+ *
+ * @author Bilel
+ */
+public interface IClub extends IDao<Club, Integer>{  
+  
+   public Club find(String name);
+   public List<Club> DisplayAllClub();
+   public List<String> DisplayAllNomClub();
+}

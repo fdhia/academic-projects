@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="330.0" minHeight="300.0" prefHeight="400.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allwin.pkg2016.GuiForms.StatistiqueJoueurController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="440.0" layoutX="10.0" layoutY="39.0" opacity="0.7" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@Images/background.jpg" />
+         </image>
+      </ImageView>
+      <Separator layoutX="203.0" layoutY="8.0" orientation="VERTICAL" prefHeight="300.0" prefWidth="2.0" style="-fx-background-color: Black;" AnchorPane.topAnchor="0.0" />
+      <Separator layoutX="1.0" layoutY="205.0" prefHeight="6.0" prefWidth="202.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="1.0" />
+      <ImageView fx:id="ImageviewProfile" fitHeight="153.0" fitWidth="195.0" layoutX="10.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="30.0" />
+      <Label layoutX="7.0" layoutY="216.0" text="Date Naissance :">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="6.0" layoutY="274.0" text="Taille :">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="215.0" layoutY="249.0" text="Poid :">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="211.0" layoutY="225.0" text="Main preferée :">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="215.0" layoutY="97.0" text="Debut carriére : " />
+      <Label layoutX="211.0" layoutY="126.0" text="Nombre de titre : " />
+      <Label layoutX="214.0" layoutY="174.0" text="Classement :" />
+      <Label layoutX="214.0" layoutY="200.0" text="Score :" />
+      <Label layoutX="217.0" layoutY="150.0" text="Club :" AnchorPane.bottomAnchor="163.0" />
+      <Label layoutX="7.0" layoutY="249.0" text="Pays :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Text fx:id="naissanceT" layoutX="141.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="80.0" AnchorPane.leftAnchor="110.0" />
+      <Text fx:id="payT" layoutX="141.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="80.0" AnchorPane.leftAnchor="110.0" />
+      <Text fx:id="tailleT" layoutX="110.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="80.0" AnchorPane.leftAnchor="110.0" />
+      <Text fx:id="poidT" layoutX="256.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="50.0" AnchorPane.rightAnchor="59.0" />
+      <Text fx:id="mainT" layoutX="309.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="100.0" AnchorPane.rightAnchor="23.0" />
+      <TextField fx:id="searchJ" layoutX="261.0" layoutY="25.0" onKeyReleased="#searchJoueur" prefHeight="25.0" prefWidth="78.0" AnchorPane.rightAnchor="93.0" AnchorPane.topAnchor="25.0" />
+      <Text fx:id="carriereT" layoutX="306.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="108.0000002682209" AnchorPane.rightAnchor="17.9999997317791" />
+      <Text fx:id="nbrtitreT" layoutX="310.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="121.99999469518661" />
+      <Text fx:id="classementT" layoutX="300.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="50.0" AnchorPane.rightAnchor="82.0" />
+      <Text fx:id="scoreT" layoutX="258.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="70.0" AnchorPane.rightAnchor="37.0" />
+      <Text fx:id="clubT" layoutX="250.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="100.0" AnchorPane.rightAnchor="82.0" />
+      <Text fx:id="nomT" layoutX="83.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>

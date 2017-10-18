@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@MainStyle.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allwin.pkg2016.GuiForms.ListeCompetitionController">
+   <children>
+      <ImageView layoutY="-14.0" opacity="0.35" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@Images/background.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="103.0" layoutY="120.0" prefHeight="223.0" prefWidth="338.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="170.0">
+         <children>
+            <TableView fx:id="TableCompetition" fixedCellSize="0.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <columns>
+                  <TableColumn fx:id="NomCol" prefWidth="75.0" text="Nom" />
+                  <TableColumn fx:id="DdebutCol" prefWidth="75.0" text="Date debut" />
+                  <TableColumn fx:id="DfinCol" prefWidth="75.0" text="Date fin" />
+                  <TableColumn fx:id="LieuCol" prefWidth="75.0" text="lieu" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Separator layoutY="119.0" prefHeight="0.0" prefWidth="606.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0" />
+      <Button layoutX="701.0" layoutY="363.0" mnemonicParsing="false" onAction="#Actualiser" prefHeight="25.0" prefWidth="25.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="130.0">
+          <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Icons/actualiser.png" />
+               </image>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+         </graphic></Button>
+      <JFXTextField fx:id="filterInput" layoutX="60.0" layoutY="130.0" maxHeight="35.0" minHeight="35.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="130.0" />
+      <JFXButton fx:id="ajouterCompetition" buttonType="RAISED" layoutX="690.0" layoutY="170.0" minWidth="100.0" onAction="#Actualiser" style="-fx-background-radius: 10; -fx-border-radius: 10;" text="Ajouter" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="170.0" />
+      <JFXButton fx:id="supprimerCompetition" buttonType="RAISED" layoutX="730.0" layoutY="230.0" minWidth="100.0" onAction="#SuppComp" style="-fx-background-radius: 10; -fx-border-radius: 10;" text="Supprimer" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="220.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" stylesheets="@MainStyle.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="allwin.pkg2016.GuiForms.ListeMembresController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" layoutX="147.0" layoutY="10.0" opacity="0.7" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@Images/background.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="333.0" layoutY="215.0" opacity="0.8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 20; -fx-border-radius: 20;" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="170.0">
+         <children>
+            <TableView fx:id="TableMembre" fixedCellSize="0.0" layoutY="40.0" opacity="0.8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 20; -fx-border-radius: 20;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <columns>
+                  <TableColumn fx:id="NomCol" prefWidth="75.0" text="Nom" />
+                  <TableColumn fx:id="PrenomCol" prefWidth="75.0" text="Prenom" />
+                  <TableColumn fx:id="MailCol" prefWidth="75.0" text="Mail" />
+                  <TableColumn fx:id="SexeCol" prefWidth="75.0" text="Sexe" />
+                  <TableColumn fx:id="DateCol" prefWidth="75.0" text="Date de Naissance" />
+                  <TableColumn fx:id="NumTelCol" prefWidth="75.0" text="Numéro Téléphone" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Separator layoutY="119.0" prefWidth="200.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0" />
+      <JFXTextField fx:id="filterInput" layoutX="60.0" layoutY="123.0" maxHeight="35.0" minHeight="35.0" minWidth="250.0" promptText="Recherche" style="-fx-background-radius: 10; -fx-border-radius: 10;" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="130.0" />
+      <JFXButton buttonType="RAISED" layoutX="699.0" layoutY="207.0" minWidth="100.0" onAction="#clickBanir" text="Bannir" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="200.0" />
+   </children>
+</AnchorPane>
